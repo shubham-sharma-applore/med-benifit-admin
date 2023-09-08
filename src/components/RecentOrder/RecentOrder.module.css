@@ -1,0 +1,126 @@
+.main_div {
+  display: flex;
+  width: 42.5%;
+  margin-top: 4%;
+  background: rgba(255, 255, 255, 1);
+  margin-right: 2%;
+  border-radius: 8px;
+  flex-direction: column;
+  height: 50%;
+}
+
+.main_heading {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(69, 70, 78, 1);
+  margin: 1rem;
+}
+
+.order_data_main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order_div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--Stroke, #f1f3f9);
+  width: calc(100% - 2rem);
+  padding: 0.5rem 0;
+}
+
+.icon_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* margin-left: 3%; */
+}
+
+.order_details_div {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.order_details_name {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(69, 70, 78, 1);
+}
+
+.order_details_price {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(51, 52, 58, 1);
+}
+
+/* .order_details_status {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  border: 1px solid red;
+  height: 100%;
+} */
+
+.order_details_status_date {
+  color: var(--black-20, #a6a8b1);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: end;
+  /* margin: 20px 0; */
+}
+
+.order_details_status_pending {
+  display: flex;
+  padding: 0.125rem 0.9375rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: rgba(245, 126, 119, 0.12);
+  color: var(--action-red, #cc5f5f);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.order_details_status_complete {
+  display: flex;
+  padding: 0.125rem 0.9375rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  background: rgba(50, 147, 111, 0.12);
+  color: var(--action-green, #519c66);
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}

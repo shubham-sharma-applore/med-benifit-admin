@@ -16,7 +16,6 @@
 }
 
 .profile_pic_css {
-  margin-top: 15px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -25,7 +24,6 @@
 
 .dropdown_icon_css {
   width: 12px;
-  height: 7.409999847412109px;
-  margin-top: 22px;
+  height: 7.41px;
   margin-left: 0.5rem;
 }
