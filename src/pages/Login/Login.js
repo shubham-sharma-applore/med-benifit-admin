@@ -26,7 +26,8 @@ const Login = () => {
     try {
       const login_reponse = await post("/login", data);
       if (login_reponse.response === "Success") {
-        await localStorage.setItem("token", login_reponse?.data?.token);
+        localStorage.setItem("token", login_reponse?.data?.token);
+        navigate("/");
       }
       setData({
         email: "",

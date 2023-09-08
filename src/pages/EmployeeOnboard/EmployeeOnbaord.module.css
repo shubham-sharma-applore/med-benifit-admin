@@ -11,6 +11,7 @@
   width: 90%;
   margin-left: 3%;
   padding-top: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .onboard_header p {
@@ -66,7 +67,7 @@ input::placeholder {
   justify-content: space-between;
   /* align-items: center; */
   background: rgba(255, 255, 255, 1);
-  width: 90%;
+  width: 95%;
   height: 73vh;
   margin-left: 3%;
   border-radius: 12px;
