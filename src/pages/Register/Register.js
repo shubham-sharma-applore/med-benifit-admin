@@ -25,10 +25,11 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const login_reponse = await post("/register", data);
+      const register_reponse = await post("/register", data);
       // if (login_reponse.response === "Success") {
       //   await localStorage.setItem("token", login_reponse?.data?.token);
       // }
+      console.log("response", register_reponse);
       setData({
         email: "",
         password: "",
