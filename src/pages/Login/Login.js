@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./Login.module.css";
-import image from "../../assets/images/Saly-10.svg";
+import image from "../../assets/images/Saly-10.png";
 import { post } from "../../utils/axios";
 import { useNavigate } from "react-router-dom";
 

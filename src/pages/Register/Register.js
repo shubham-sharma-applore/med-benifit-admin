@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../../assets/images/Saly-10.svg";
+import image from "../../assets/images/Saly-10.png";
 import style from "./Register.module.css";
 import { post } from "../../utils/axios";
 import { useNavigate } from "react-router-dom";

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./SubmitOTP.module.css";
-import image from "../../assets/images/Saly-10.svg";
+import image from "../../assets/images/Saly-10.png";
 
 const SubmitOTP = () => {
   return (
