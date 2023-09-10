@@ -1,23 +1,40 @@
 .main_div {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
+  background: #fff;
+}
+
+.main_content_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 8%);
+  height: calc(100% - 18%);
 }
 
 .left_side {
+  width: 60%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
   background: linear-gradient(180deg, #009dc7 0%, #1a3f49 100%);
-  border-radius: 30px;
-  padding: 0.5rem 10rem;
+}
+
+.left_side img {
+  width: 60%;
+  height: 60%;
+  flex-shrink: 0;
+  margin: 7.5% 20% auto 20%;
 }
 
 .right_side {
-  /* border: 1px solid red; */
+  width: 33%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .nameText {
@@ -31,7 +48,7 @@
 }
 
 .login_regiter_switch {
-  width: 329px;
+  width: 75%;
   height: 59px;
   top: 48px;
   left: 53px;
@@ -40,7 +57,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .form_div {
@@ -48,7 +65,8 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  width: 100%;
 }
 
 .form_div .p {
@@ -62,32 +80,37 @@
 }
 
 .form_div input {
-  width: 435px;
+  width: 100%;
   height: 54px;
-  top: 36px;
+  /* top: 36px;ṢW */
+  margin-bottom: 0.5rem;
   border-radius: 40px;
   border: 1px solid rgba(0, 157, 199, 1);
   background: linear-gradient(0deg, #ffffff, #ffffff);
 }
 
 .leftside_main_heading {
+  color: #fff;
   font-family: Poppins;
-  font-size: 37px;
+  font-size: 2.3125rem;
+  font-style: normal;
   font-weight: 700;
-  /* line-height: 56px; */
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
+  line-height: normal;
+  /* width: 27.1875rem; */
+  margin-left: 10%;
+  margin-top: 5rem;
 }
 
 .leftside_sub_heading {
+  color: #fff;
   font-family: Poppins;
-  font-size: 25px;
+  font-size: 1.5625rem;
+  font-style: normal;
   font-weight: 400;
-  /* line-height: 38px; */
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
+  line-height: normal;
+  /* width: 18.8125rem; */
+  margin-left: 10%;
+  margin-top: 0.75rem;
 }
 
 .login_page_btn {
@@ -125,7 +148,7 @@
 
 .submit_register_btn {
   border: none;
-  width: 441px;
+  width: 100%;
   height: 54px;
   border-radius: 32px;
   box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.25);
@@ -139,11 +162,11 @@
 }
 
 .remember_forgotpass_div {
-  width: 435px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .remember_forgotpass_div p {
