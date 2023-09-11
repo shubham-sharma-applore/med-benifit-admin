@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://35.154.129.102:10001/api/v1/admin";
+const API_BASE_URL = "https://med-benefits-api.applore.in/api/v1/admin";
 
 // Create an Axios instance with common configuration
 // const token = localStorage.getItem("token");
