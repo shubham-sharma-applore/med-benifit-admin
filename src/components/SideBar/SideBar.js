@@ -4,10 +4,13 @@ import active from "../../assets/images/active.svg";
 import active1 from "../../assets/images/active (1).svg";
 import active2 from "../../assets/images/active (2).svg";
 import logout from "../../assets/images/Logout.svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SideBar = () => {
   const navigate = useNavigate();
+  // const location = useLocation();
+
+  // console.log("location", location.pathname);
   const handleLogout = () => {
     localStorage.removeItem("token");
     navigate("/login");
@@ -17,7 +20,11 @@ const SideBar = () => {
       <div className={style.sidebar_main_div}>
         <div className={style.sidebar_list_div}>
           <img src={active} alt="icon" />
-          <img src={active1} alt="icon" />
+          <img
+            src={active1}
+            alt="icon"
+            onClick={() => navigate("/employee-list")}
+          />
           <img src={active2} alt="icon" />
         </div>
         <div>

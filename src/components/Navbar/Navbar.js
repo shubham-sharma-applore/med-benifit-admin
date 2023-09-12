@@ -12,7 +12,7 @@ const Navbar = () => {
           alt="Profile Pic"
           className={style.profile_pic_css}
         />
-        <p>Roman Johanson</p>
+        <p>Admin</p>
         <img src={dropdown_icon} alt="dropdown" className={style.dropdown_icon_css}/>
       </div>
     </div>
