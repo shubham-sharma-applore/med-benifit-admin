@@ -27,7 +27,7 @@ const Login = () => {
       const login_reponse = await post("/login", data);
       if (login_reponse.response === "Success") {
         localStorage.setItem("token", login_reponse?.data?.token);
-        navigate("/");
+        navigate("/employee-onboard");
       }
       setData({
         email: "",
@@ -51,15 +51,15 @@ const Login = () => {
           <p className={style.leftside_sub_heading}>Lorem Ipsum is simply</p>
         </div>
         <div className={style.right_side}>
-          <p className={style.nameText}>Welcome to lorem..!</p>
+          {/* <p className={style.nameText}>Welcome to lorem..!</p> */}
           <div className={style.login_regiter_switch}>
             <button className={style.login_page_btn}>Login</button>
-            <button
+            {/* <button
               className={style.register_page_btn}
               onClick={() => handleRedirect("register")}
             >
               Register
-            </button>
+            </button> */}
           </div>
           <div className={style.form_div}>
             <p>Email</p>
@@ -80,8 +80,8 @@ const Login = () => {
             />
           </div>
           <div className={style.remember_forgotpass_div}>
-            <div>
-              <input type="checkbox" name="remember" value="yes" />
+            <div className={style.remember_forgotpass_inner_div}>
+              <input type="checkbox" name="remember" value="yes" className={style.forgotpass_checkbox}/>
               <label for="vehicle1">Remember me</label>
             </div>
             <p onClick={() => handleRedirect("forgot-password")}>
